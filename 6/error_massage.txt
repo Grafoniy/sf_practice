@@ -1,0 +1,31 @@
+Changes:
+
+
+------------------------------------------
+Started by user admin
+Running as SYSTEM
+Building in workspace <http://vsv.my.to:9090/job/CI_test/ws/>
+The recommended git tool is: NONE
+using credential 1bf76641-4562-40cd-9ef7-aff4ecafa241
+ > git rev-parse --resolve-git-dir <http://vsv.my.to:9090/job/CI_test/ws/.git> # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Grafoniy/ci.git # timeout=10
+Fetching upstream changes from https://github.com/Grafoniy/ci.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_ASKPASS to set credentials
+ > git fetch --tags --force --progress -- https://github.com/Grafoniy/ci.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision cb22aa3c408fa1975b09b983efc0b08be19b80d4 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cb22aa3c408fa1975b09b983efc0b08be19b80d4 # timeout=10
+Commit message: "Update index.html"
+ > git rev-list --no-walk cb22aa3c408fa1975b09b983efc0b08be19b80d4 # timeout=10
+[CI_test] $ /bin/sh -xe /tmp/jenkins16802437405608041628.sh
++ rm -rf /prac11/code
++ git clone https://gitthub.com/Grafoniy/ci.git /prac11/code
+Cloning into '/prac11/code'...
+fatal: repository 'https://gitthub.com/Grafoniy/ci.git/' not found
+Build step 'Execute shell' marked build as failure
