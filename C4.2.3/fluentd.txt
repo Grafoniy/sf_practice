@@ -1,0 +1,14 @@
+<source>
+  @type http
+  port 8888
+</source>
+
+
+<match /"source":"localhost"/>
+ @type null
+</match>
+
+<match **>
+  @type file
+  path /var/log/td-agent/access
+</match>
